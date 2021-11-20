@@ -1,0 +1,91 @@
+*{
+    /* css reset agar semua penggunaan padding tidak mempengaruhi width & height suatu element */
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #fefefe;
+    height: 100vh;
+    width: 100%;
+    /* ini css reset untuk issue inconsistency browser */
+    padding: 0;
+    margin: 0;
+}
+.header {
+    height: 14.5rem;
+    overflow: hidden;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+.main {
+    padding: 10px 20px 0px 10px;
+    float: left;
+    width: 70%;
+}
+.main p{
+    font-size: small;
+}
+.sidebar{
+    padding: 10px;
+    float: right;
+    width: 30%;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+button{
+    background-color: #2152d8;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding:5px;
+    text-align: center;
+    font-size: smaller;
+    /* membuat footer selalu dibagian bawah */
+    bottom:0;
+    width: 100%;
+    position: sticky;
+}
+
+/* ini salah satu css reset untuk clear jika sudah ada float */
+.clear{
+    clear: both;
+}
+@media screen and (max-width: 767px) {
+    .header img{
+        width: 100%;
+        height: 10em;
+    }
+    .main, .sidebar {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .main{
+        text-align: center;
+    }
+
+    .sidebar{
+        background-color: #e9d200;
+        border-radius: 8px 8px 0 0;
+    }
+    ul{
+        padding-left: 1rem;
+    }
+    input, button {
+        width: 100%;
+    }
+}
